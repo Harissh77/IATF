@@ -2,6 +2,7 @@
 Infrastructure Automation Test Suite
 
 Test Suite Components
+---------------------
 
 1. Unit Tests: Validate individual infrastructure components.
 2. System Integration Tests: Verify interactions between components.
@@ -16,3 +17,11 @@ Test Suite Components
 | Acceptance Test     | Modules      |   Input Validation |
 | System Integration Test  | Modules, configuration      |   terraform test|
 | Functionality Test  | Product functionality      |   pytest |
+
+Jenkins Pipeline 
+----------------
+
+URL : http://44.244.72.199:8080/
+User : MercurySparks
+Password : atlan2277?!
+
