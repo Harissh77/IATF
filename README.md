@@ -1,5 +1,5 @@
 # IATF
-Infrastructure Automation Test Suite
+Infrastructure Automation Test Framework
 
 Test Suite Components
 ---------------------
