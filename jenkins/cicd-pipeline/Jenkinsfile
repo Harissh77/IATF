@@ -54,7 +54,7 @@ pipeline {
   stage('terraform Apply') {
  
        steps {
-           dir ("vpc") {
+           dir ("infrastructure-tests") {
             
               script {
                     withAWS(roleAccount:'970547336061', role:'kops-role', useNode: true) {
