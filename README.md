@@ -12,7 +12,7 @@ Test Suite Components
 
 | Test Type       | Use Case          | Terraform configuration  |
 | ------------- |:-------------:| -----:|
-| Unit test     | Configuration| [terraform test](https://github.com/Harissh77/IATF/tree/main/infrastructure-tests/unit-test)  [documentation](https://github.com/Harissh77/IATF/blob/main/documentation/IATF-UnitTest.pdf) |
+| Unit test     | Configuration| [terraform test](https://github.com/Harissh77/IATF/tree/main/infrastructure-tests/unit-test)  [Test Plan](https://github.com/Harissh77/IATF/blob/main/documentation/IATF-UnitTest.pdf) |
 | Acceptance Test     | Modules      |   Input Validation |
 | System Integration Test  | Modules, configuration      |   terraform test|
 | Functionality Test  | Product functionality      |   pytest |
