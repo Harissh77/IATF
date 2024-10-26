@@ -4,9 +4,16 @@ Infrastructure Automation Test Framework
 
 Importance of Testing IaC
 -------------------------
-|Terraform configuration  |Problem Description|
+|Problem  |Problem Description|
 |:-------------| :-----|
 |Configuration Drift | When actual infrastructure configurations deviate from desired states, It may cause inconsistencies and errors |
+|Deployment Failures | Untested IaC can result in deployment failures, downtime, and lost productivity due to incorrect or incompatible configurations |
+|Compliance Issues   | Non-compliant infrastructure configurations can result in failed audits, regulatory penalties, and reputational damage |
+|Resource mismanagement | Unoptimized infrastructure configurations can lead to unnecessary resource utilization, increased costs, and inefficient resource allocation |
+|Debugging Issues | identifying and debugging infrastructure issues can become complex and time-consuming |
+|Inconsistent Environments | Un-tested IaC can lead to inconsistent environments across QA, PreProd, and Prod causing issues with application behavior and testing |
+|Security Vulnerabilities |  Un-tested IaC configurations may expose infrastructure to security risks, such as unpatched vulnerabilities or unauthorized access controls |
+
 
 
 Test Suite Components
