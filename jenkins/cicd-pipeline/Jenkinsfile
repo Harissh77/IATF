@@ -43,13 +43,7 @@ pipeline {
             }
         }
       }
-
-  stage('Waiting for Approvals') {
-            
-      steps{
-          input('Plan Validated? Please approve to create VPC Network in AWS?')
-			  }
-      }    
+  
 
   stage('terraform Apply') {
  
