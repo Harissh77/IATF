@@ -21,7 +21,7 @@ Importance of Testing IaC
 Architecture 1 
 --------------
 
-Continous [Integration - Deployment - Test](https://github.com/Harissh77/IATF/tree/main/infrastructure-tests/unit-test)
+Continous [Integration - Deployment - Test](https://github.com/Harissh77/IATF/blob/main/documentation/Architecture1.png)
 
 Architecture 2 
 --------------
