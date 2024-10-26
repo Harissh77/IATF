@@ -1,14 +1,15 @@
 # IATF
 Infrastructure Automation Test Framework
 
-Test Suite Components
----------------------
 
 Importance of Testing IaC
 -------------------------
 
 |Configuration Drift | When actual infrastructure configurations deviate from desired states, It may cause inconsistencies and errors |
 
+
+Test Suite Components
+---------------------
 
 
 | Test Type       | Use Case          | Terraform configuration  |
