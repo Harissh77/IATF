@@ -16,12 +16,12 @@ provider "aws" {
 
 variable "AWS_CONFIG_FILE" { 
 type= string 
-default = "./config/config"
+default = "/home/ec2-user/.aws/config/config"
 } 
 
 variable "AWS_SHARED_CREDENTIALS_FILE" { 
 type= string 
-default = "./config/credentials"
+default = "/home/ec2-user/.aws/config/credentials"
 } 
 
 variable "instance_name" {
