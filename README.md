@@ -15,6 +15,12 @@ Importance of Testing IaC
 |Security Vulnerabilities |  Un-tested IaC configurations may expose infrastructure to security risks, such as unpatched vulnerabilities or unauthorized access controls |
 
 
+Test Architecture
+-----------------
+
+Continous Integration - Deployment - Test 
+          -----------   ----------   ----        
+
 
 Test Suite Components
 ---------------------
