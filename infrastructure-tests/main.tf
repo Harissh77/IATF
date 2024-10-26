@@ -28,8 +28,11 @@ variable "instance_name" {
 type = string
 default = "pipeline"
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> c9b5b4b8cf151b13bccf2abf9f6c4da458a352a0
 
 resource "aws_instance" "create_instance" {
   ami           = "ami-04e914639d0cca79a"
@@ -41,4 +44,8 @@ resource "aws_instance" "create_instance" {
 
 }
 
+<<<<<<< HEAD
  
+=======
+ 
+>>>>>>> c9b5b4b8cf151b13bccf2abf9f6c4da458a352a0
