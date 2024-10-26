@@ -26,7 +26,7 @@ Continous [Integration - Deployment - Test](https://github.com/Harissh77/IATF/bl
 Architecture 2 
 --------------
 
-Continous [Integration - Test - Deployment - Test](https://github.com/Harissh77/IATF/tree/main/infrastructure-tests/unit-test)
+Continous [Integration - Test - Deployment - Test](https://github.com/Harissh77/IATF/blob/main/documentation/Architecture2.png)
 
 Architecture 3
 --------------
