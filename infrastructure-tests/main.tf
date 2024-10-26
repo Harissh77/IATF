@@ -16,6 +16,7 @@ provider "aws" {
 
 variable "instance_name" {
 type = string
+default = "pipeline"
 }
 
 resource "aws_instance" "create_instance" {
