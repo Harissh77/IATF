@@ -4,7 +4,8 @@ Infrastructure Automation Test Framework
 
 Importance of Testing IaC
 -------------------------
-
+|Terraform configuration  |Problem Description|
+|-------------:| -----:|
 |Configuration Drift | When actual infrastructure configurations deviate from desired states, It may cause inconsistencies and errors |
 
 
