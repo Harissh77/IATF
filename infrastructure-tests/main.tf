@@ -31,7 +31,7 @@ default = "pipeline"
 
 
 resource "aws_instance" "create_instance" {
-  ami           = "ami-04e914639d0cca79a"
+  ami           = "ami-04a37924ffe27da53"
   instance_type = "t2.micro"
   
   tags = {
