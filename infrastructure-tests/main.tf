@@ -21,11 +21,6 @@ type= string
 default = "./config/credentials"
 } 
 
-provider "aws" {
-  region  = "ap-south-1"
-  profile = "iatf"
-}
-
 variable "instance_name" {
 type = string
 default = "pipeline"
