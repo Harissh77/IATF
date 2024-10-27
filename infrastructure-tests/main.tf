@@ -11,7 +11,7 @@ terraform {
 
 provider "aws" {
   region  = "ap-south-1"
-  profile = "iatf"
+  profile = "default"
 }
 
 variable "instance_name" {
