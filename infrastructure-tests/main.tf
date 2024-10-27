@@ -9,6 +9,20 @@ terraform {
   required_version = ">= 1.2.0"
 }
 
+provider "aws" {
+  region  = "ap-south-1"
+  profile = "iatf"
+}
+
+variable "AWS_CONFIG_FILE" { 
+type= string 
+default = "./config/config"
+} 
+
+variable "AWS_SHARED_CREDENTIALS_FILE" { 
+type= string 
+default = "./config/credentials"
+} 
 
 variable "instance_name" {
 type = string
