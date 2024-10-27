@@ -35,6 +35,14 @@ Continous [Integration - Test - AutoFix - Deployment - Test](https://github.com/
                  
 
 
+#Architecture 3 
+(Recommended)
+
+Continous Integration - Test - AutoFix - Deploy - Test 
+------------------------------------------------------
+
+
+
 Test Suite Components
 ---------------------
 
