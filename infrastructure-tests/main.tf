@@ -9,10 +9,6 @@ terraform {
   required_version = ">= 1.2.0"
 }
 
-provider "aws" {
-  region  = "ap-south-1"
-  profile = "default"
-}
 
 variable "instance_name" {
 type = string
