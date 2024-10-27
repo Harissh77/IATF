@@ -33,7 +33,17 @@ default = "pipeline"
 resource "aws_instance" "create_instance" {
   ami           = "ami-04a37924ffe27da53"
   instance_type = "t2.micro"
-  
+
+     provisioner "file" {
+        source      = "./infrastructure-tests/install.sh"
+        destination = "/home/ec2-user/install.sh"
+       
+    connection {
+      type        = "ssh"
+      user        = "ec2-user"
+      host        = "${self.public_ip}"
+    }
+   }
   tags = {
     Name = format("IATF-Instance-%s", var.instance_name)
   }
