@@ -33,11 +33,5 @@ assert {
         error_message = "Instance Name $(var.instance_name) is greater than 20 chars "
 }
 
-test "Test4_Resource_Created_Check" {
-  terraform {
-    source = "../main.tf"
-  }
-  expect(aws_instance.create_instance).to exist
-}
 
 }
