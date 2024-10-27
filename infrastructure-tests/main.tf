@@ -20,6 +20,9 @@ variable "AWS_SHARED_CREDENTIALS_FILE" {
 type= string 
 default = "./config/credentials"
 } 
+provider "aws" {
+  region  = "ap-south-1"
+}
 
 variable "instance_name" {
 type = string
