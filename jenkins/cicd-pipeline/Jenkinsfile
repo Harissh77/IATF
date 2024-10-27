@@ -48,7 +48,7 @@ pipeline {
         stage('terraform Test') {
  
        steps {
-           dir ("infrastructure-tests") {
+           dir ("infrastructure-tests/unit-test") {
             
                script {
                     withAWS(roleAccount:'970547336061', role:'HGRole1', useNode: true) {
