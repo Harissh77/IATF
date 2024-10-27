@@ -58,7 +58,7 @@ pipeline {
         }
       }
 
-    stage("Instance Creation Test') {
+    stage('Instance Creation Test') {
        steps {
            dir ("infrastructure-tests") {
             
