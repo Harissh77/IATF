@@ -14,6 +14,7 @@ Importance of Testing IaC
 |Inconsistent Environments | Un-tested IaC can lead to inconsistent environments across QA, PreProd, and Prod causing issues with application behavior and testing |
 |Security Vulnerabilities |  Un-tested IaC configurations may expose infrastructure to security risks, such as unpatched vulnerabilities or unauthorized access controls |
 
+##
 
 # Test Architecture
 
@@ -33,14 +34,13 @@ Architecture 3
 
 Continous [Integration - Test - AutoFix - Deployment - Test](https://github.com/Harissh77/IATF/blob/main/documentation/Architecture3.png) 
                  
-
+##
 
 # Architecture 3 
 (Recommended)
 
 Continous Integration - Test - AutoFix - Deploy - Test 
 ------------------------------------------------------
-
 
 
 Test Suite Components
