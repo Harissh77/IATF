@@ -1,7 +1,7 @@
 variables {
   instance_name= "HGInstance"
 }
-run "Test1:_Resource_Name_Formar_Check" {
+run "Test1_Resource_Name_Formar_Check" {
 command = plan
 assert {
 	condition = startswith(aws_instance.create_instance.tags.Name, "IATF")
@@ -14,7 +14,7 @@ assert {
 
 }
 
-run "Test2:_Resource_Name_Length_Check" {
+run "Test2_Resource_Name_Length_Check" {
 command = plan
 assert {
 	condition = length(aws_instance.create_instance.tags.Name) <= 25
@@ -22,7 +22,7 @@ assert {
 }
 }
 
-run "Test3:_Resource_Type_Check" {
+run "Test3_Resource_Type_Check" {
 command = plan
 
 variables {
@@ -33,7 +33,7 @@ assert {
         error_message = "Instance Name $(var.instance_name) is greater than 20 chars "
 }
 
-test "Test4:_Resource_Created_Check" {
+test "Test4_Resource_Created_Check" {
   terraform {
     source = "../main.tf"
   }
