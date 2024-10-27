@@ -34,18 +34,16 @@ resource "aws_instance" "create_instance" {
   ami           = "ami-04a37924ffe27da53"
   instance_type = "t2.micro"
 
-     provisioner "file" {
-        source      = "./infrastructure-tests/install.sh"
-        destination = "/home/ec2-user/install.sh"
-       
-    connection {
-      type        = "ssh"
-      user        = "ec2-user"
-      host        = "${self.public_ip}"
-    }
-   }
   tags = {
     Name = format("IATF-Instance-%s", var.instance_name)
   }
+  user_data = <<-EOF
+                #!/bin/bash
+                sudo yum install python -y
+                sudo yum install pip -y
+                sudo python -m pip install pytest -y 
+                echo "Terraform is easy!!!" > /var/www/html/index.html
+                EOF
+   user_data_replace_on_change = true 
 
 }
