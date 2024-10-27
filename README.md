@@ -31,7 +31,7 @@ Continous [Integration - Test - Deployment - Test](https://github.com/Harissh77/
 Architecture 3
 --------------
 
-Continous [Integration - Local Deployment - Test - Deployment](https://github.com/Harissh77/IATF/tree/main/infrastructure-tests/unit-test) 
+Continous [Integration - Test - AutoFix - Deployment - Test](https://github.com/Harissh77/IATF/blob/main/documentation/Architecture3.png) 
                  
 
 
