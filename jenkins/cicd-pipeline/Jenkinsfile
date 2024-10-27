@@ -45,14 +45,26 @@ pipeline {
       }
 
 
-        stage('terraform Test') {
- 
+  stage('Configuration Test') {
        steps {
            dir ("infrastructure-tests") {
             
                script {
                     withAWS(roleAccount:'970547336061', role:'HGRole1', useNode: true) {
                     sh 'terraform test -filter=tests/unit.tftest.hcl -no-color'
+                    }
+               }
+            }
+        }
+      }
+
+    stage("Instance Creation Test') {
+       steps {
+           dir ("infrastructure-tests") {
+            
+               script {
+                    withAWS(roleAccount:'970547336061', role:'HGRole1', useNode: true) {
+                    sh 'terraform test -filter=tests/testInstanceCreation.tftest.hcl -no-color'
                     }
                }
             }
