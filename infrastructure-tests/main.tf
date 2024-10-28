@@ -30,7 +30,7 @@ resource "aws_instance" "server" {
   vpc_security_group_ids = [ aws_security_group.instance.id ]
   availability_zone = var.availability_zone
   tags = {
-    Name = "HG-IATF-Server"
+    Name = "IATF-HG-Server"
   }
   user_data = <<-EOF
                 #!/bin/bash
