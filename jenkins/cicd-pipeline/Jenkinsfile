@@ -12,6 +12,7 @@ pipeline {
     stage('Install Checkov') {
        steps {
          script {
+           sh "sudo su -"
             sh "yum install python -y"
          }
      }
