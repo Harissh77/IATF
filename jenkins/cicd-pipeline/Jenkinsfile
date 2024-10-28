@@ -17,6 +17,19 @@ pipeline {
          }
      }
   }
+  stage('Build Terrascan and generate test results') {
+            steps {
+                // clone the terrascan repository
+                git branch: 'master', url: 'https://github.com/accurics/terrascan.git'
+
+                // build terrascan
+                sh "make build"   
+                
+                // scan repo
+                sh "./bin/terrascan scan -d infrastructure-tests || true"
+            }
+     }
+  
   stage('terraform init') {
  
        steps {
