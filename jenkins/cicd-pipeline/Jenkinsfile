@@ -1,10 +1,5 @@
 pipeline {
   agent  any
-
-      tools {
-      go 'go1.15.7'
-    }
-
   
     stages {
 
@@ -13,6 +8,32 @@ pipeline {
           checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'githg', url: 'https://github.com/Harissh77/IATF.git']]])
         }
       }
+
+      stages {
+         stage('Checkout') {
+             steps {
+                 git branch: 'master', url: 'https://github.com/bridgecrewio/terragoat'
+                 stash includes: '**/*', name: 'terragoat'
+             }
+         }
+
+                 stage('Checkov') {
+             steps {
+                 script {
+                     docker.image('bridgecrew/checkov:latest').inside("--entrypoint=''") {
+                         unstash 'terragoat'
+                         try {
+                             sh 'checkov -d . --use-enforcement-rules -o cli -o junitxml --output-file-path console,results.xml --repo-id example/terragoat --branch master'
+                             junit skipPublishingChecks: true, testResults: 'results.xml'
+                         } catch (err) {
+                             junit skipPublishingChecks: true, testResults: 'results.xml'
+                             throw err
+                         }
+                     }
+                 }
+             }
+         }
+     }
 
      
       stage('Set Terraform path') {
@@ -23,18 +44,7 @@ pipeline {
          }
      }
   }
-  stage('Build Terrascan and generate test results') {
-            steps {
-                // clone the terrascan repository
-                git branch: 'master', url: 'https://github.com/accurics/terrascan.git'
 
-                // build terrascan
-                sh "make build"   
-                
-                // scan repo
-                sh "./bin/terrascan scan -d infrastructure-tests || true"
-            }
-     }
   
   stage('terraform init') {
  
