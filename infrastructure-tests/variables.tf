@@ -22,5 +22,5 @@ variable "ssh_port" {
 }
 
 variable "availability_zone" {
-  default = "ap-south-1"
+  default = "ap-south-1a"
 }
