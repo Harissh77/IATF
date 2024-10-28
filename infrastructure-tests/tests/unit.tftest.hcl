@@ -4,7 +4,7 @@ variables {
 run "Test1_Resource_Name_Formar_Check" {
 command = plan
 assert {
-	condition = startswith(aws_instance.create_instance.tags.Name, "IATF")
+	condition = startswith(aws_instance.server.tags.Name, "IATF")
         error_message = "Instance Name $(var.instance_name) did not start with IATF"
 }
 assert {
@@ -17,7 +17,7 @@ assert {
 run "Test2_Resource_Name_Length_Check" {
 command = plan
 assert {
-	condition = length(aws_instance.create_instance.tags.Name) <= 25
+	condition = length(aws_instance.server.tags.Name) <= 25
         error_message = "Instance Name $(var.instance_name) is greater than 20 chars "
 }
 }
