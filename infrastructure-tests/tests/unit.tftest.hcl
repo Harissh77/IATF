@@ -8,7 +8,7 @@ assert {
         error_message = "Instance Name $(var.instance_name) did not start with IATF"
 }
 assert {
-	condition = length(aws_instance.create_instance.tags.Name) <= 25
+	condition = length(aws_instance.server.tags.Name) <= 25
         error_message = "Instance Name $(var.instance_name) is greater than 20 chars "
 }
 
