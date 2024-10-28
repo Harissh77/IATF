@@ -37,11 +37,14 @@ resource "aws_instance" "server" {
 	        sudo yum install python -y 
                 sudo yum install pip -y 
                 sudo python -m pip install pytest -y
+                sudo pip3 install checkov -y 
+                sudo checkov -d infrastructure-tests -o junitxml --output-file-path scanreport
                 sudo yum update -y
                 sudo yum install httpd -y
                 sudo systemctl start httpd
                 sudo systemctl enable httpd
                 echo "Welcome to the IATF Demo !" > /var/www/html/index.html
+                checkov -d infrastructure-tests -o junitxml --output-file-path scanreport
                 EOF
    user_data_replace_on_change = true 
 }
