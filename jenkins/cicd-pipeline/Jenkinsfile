@@ -91,5 +91,16 @@ pipeline {
            }
         }
       }
+      
+  stage('Checkov') {
+    steps {
+      dir ("scanreport") {
+       script {
+         junit skipPublishingChecks: true, testResults: 'results_junitxml.xml'
+       }
+    }
+    }
+  }
+      
    }
 }
