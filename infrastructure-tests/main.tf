@@ -20,22 +20,33 @@ variable "AWS_SHARED_CREDENTIALS_FILE" {
 type= string 
 default = "./config/credentials"
 } 
-provider "aws" {
-  region  = "ap-south-1"
-}
 
 variable "instance_name" {
 type = string
 default = "pipeline"
 }
 
-
-resource "aws_instance" "create_instance" {
-  ami           = "ami-04a37924ffe27da53"
-  instance_type = "t2.micro"
-  
+resource "aws_instance" "server" {
+  ami = var.ami_id
+  instance_type = var.instance_type
+  vpc_security_group_ids = [ aws_security_group.instance.id ]
+  availability_zone = var.availability_zone
   tags = {
-    Name = format("IATF-Instance-%s", var.instance_name)
+    Name = "EC2-Server"
   }
-
+  user_data = <<-EOF
+                #!/bin/bash
+	        sudo yum install python -y 
+                sudo yum install pip -y 
+                sudo python -m pip install pytest -y
+                sudo yum update -y
+                sudo yum install httpd -y
+                sudo systemctl start httpd
+                sudo systemctl enable httpd
+                echo "Welcome to the IATF Demo !" > /var/www/html/index.html
+                EOF
+   user_data_replace_on_change = true 
 }
+
+
+
