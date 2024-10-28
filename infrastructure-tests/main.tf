@@ -36,8 +36,8 @@ resource "aws_instance" "server" {
                 #!/bin/bash
 	        sudo yum install python -y 
                 sudo yum install pip -y 
-                sudo python -m pip install pytest -y
-                sudo pip3 install checkov -y 
+                sudo python -m pip install pytest
+                sudo pip3 install checkov 
                 sudo checkov -d infrastructure-tests -o junitxml --output-file-path scanreport
                 sudo yum update -y
                 sudo yum install httpd -y
