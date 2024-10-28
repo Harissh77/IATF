@@ -94,11 +94,10 @@ pipeline {
       
   stage('Checkov') {
     steps {
-      dir ("scanreport") {
        script {
-         junit skipPublishingChecks: true, testResults: 'results_junitxml.xml'
+         sh "checkov -d infrastructure-tests -o junitxml --output-file-path scanreport"
+         junit skipPublishingChecks: true, testResults: 'scanreport/results_junitxml.xml'
        }
-    }
     }
   }
       
