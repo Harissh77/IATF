@@ -9,13 +9,6 @@ pipeline {
         }
       }
 
-    stage('Install Checkov') {
-       steps {
-         script {
-            sh "sudo -s yum install python -y"
-         }
-     }
-  }
 
      
       stage('Set Terraform path') {
