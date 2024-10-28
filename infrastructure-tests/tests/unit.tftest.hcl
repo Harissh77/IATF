@@ -29,8 +29,8 @@ variables {
    resource_type="t2.micro"
 }
 assert {
-	condition = aws_instance.create_instance.instance_type == var.resource_type
-        error_message = "Instance Name $(var.instance_name) is greater than 20 chars "
+	condition = aws_instance.server.instance_type == var.resource_type
+        error_message = "Instance Type Mismatch "
 }
 
 
