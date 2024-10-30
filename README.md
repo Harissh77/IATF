@@ -60,15 +60,15 @@ Integrating Artificial Intelligence (AI) into test architecture enhances testing
 Tools
 -----
 
-Terraform - Provisioning and managing cloud and on-premises infrastructure
+**Terraform** - Provisioning and managing cloud and on-premises infrastructure
 
-Tftest -  Automated tests for Terraform configurations, ensuring infrastructure reliability and validity.
+**Tftest** -  Automated tests for Terraform configurations, ensuring infrastructure reliability and validity.
 
-Jenkins - For CI/CD pieplines
+**Jenkins** - For CI/CD pieplines
 
-Checkov - Automated security and compliance scanning tool for Infrastructure-as-Code (IaC) configurations
+**Checkov** - Automated security and compliance scanning tool for Infrastructure-as-Code (IaC) configurations
 
-Pytest - for Integration Tests. 
+**Pytest** - for Integration Tests. 
 
 Test Model  <img src="https://github.com/user-attachments/assets/324d6d30-2f30-4846-b136-f4864559e87a" width="80" />
 ----------
