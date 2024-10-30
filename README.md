@@ -68,7 +68,7 @@ Test Model  <img src="https://github.com/user-attachments/assets/324d6d30-2f30-4
 Test cases will be automated as reusable building blocks, with each test modularized to perform a specific action. This modular design enables tests to be easily combined into tailored test suites for various scenarios, facilitating flexibility and scalability. 
 Each test case will be labeled with a specific functional unit tag, enabling precise mapping to system functionality. This architecture empowers users to define and execute test suites using everyday English language, simplifying testing and increasing accessibility. 
 
-Example of "How any user can build and run the test"
+### Example of "How any user can build and run the test"
 
 _Build and Test the infrastructure Code on Azure using 'SUSE Linux' from my branch 'HarishFix-1104' with AI 'enabled'_
 
