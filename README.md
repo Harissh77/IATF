@@ -63,7 +63,8 @@ Pytest - for Integration Tests.
 
 Test Model 
 ----------
-![building-block-icon-8](https://github.com/user-attachments/assets/3f787b46-cad6-4907-927d-6eb41b9d2576)
+<img src="https://github.com/user-attachments/assets/3f787b46-cad6-4907-927d-6eb41b9d2576" width="200" />
+
 
 
 Test cases will be automated as reusable building blocks, with each test modularized to perform a specific action. This modular design enables tests to be easily combined into tailored test suites for various scenarios, facilitating flexibility and scalability.
