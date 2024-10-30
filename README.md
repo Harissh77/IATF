@@ -71,8 +71,11 @@ Each test case will be labeled with a specific functional unit tag, enabling pre
 Example of "How any user can build and run the test"
 
 _Build and Test the infrastructure Code on Azure using 'SUSE Linux' from my branch 'HarishFix-1104' with AI 'enabled'_
+
 _Build and Test the infrastructure Code on AWS using 'Red Hat Linux' from my branch 'GauthamFix-1107' without AI 'enabled'_
+
 _Build the infrastructure Code on AWS using 'Ubuntu' from my branch 'HanuFix-1212' and do not 'destroy'_
+
 
 
 
