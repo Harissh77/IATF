@@ -18,7 +18,7 @@ Importance of Testing IaC
 
 # Test Architecture
 
-Below is a list of potential test architecture options. After careful consideration, I recommend implementing Architecture 3.
+Below is a list of potential test architecture options. Each architecture dictates its unique testing approach, outlining the stages and methodologies for effective validationAfter careful consideration, I recommend implementing Architecture 3.
 
 
 Architecture 1 
@@ -65,9 +65,14 @@ Test Model  <img src="https://github.com/user-attachments/assets/324d6d30-2f30-4
 ----------
 
 
-Test cases will be automated as reusable building blocks, with each test modularized to perform a specific action. This modular design enables tests to be easily combined into tailored test suites for various scenarios, facilitating flexibility and scalability.
+Test cases will be automated as reusable building blocks, with each test modularized to perform a specific action. This modular design enables tests to be easily combined into tailored test suites for various scenarios, facilitating flexibility and scalability. 
+Each test case will be labeled with a specific functional unit tag, enabling precise mapping to system functionality. This architecture empowers users to define and execute test suites using everyday English language, simplifying testing and increasing accessibility. 
 
+Example of "How any user can build and run the test"
 
+_Build and Test the infrastructure Code on Azure using 'SUSE Linux' from my branch 'HarishFix-1104' with AI 'enabled'_
+_Build and Test the infrastructure Code on AWS using 'Red Hat Linux' from my branch 'GauthamFix-1107' without AI 'enabled'_
+_Build the infrastructure Code on AWS using 'Ubuntu' from my branch 'HanuFix-1212' and do not 'destroy'_
 
 
 
