@@ -95,9 +95,16 @@ Test Suite Components
 | Functionality Test  | Product functionality      |   pytest |
 
 
+# Demo
+
 
 Jenkins Pipeline 
 ----------------
+
+A functional prototype has been developed, showcasing the automated provisioning of an AWS instance, execution of tests via TFtest, and resource cleanup. 
+
+Try it yourself !
+
 
 URL : http://44.244.72.199:8080/
 
