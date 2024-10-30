@@ -61,7 +61,7 @@ Jenkins - For CI/CD pieplines
 Checkov - Automated security and compliance scanning tool for Infrastructure-as-Code (IaC) configurations
 Pytest - for Integration Tests. 
 
-Test Model  <img src="https://github.com/user-attachments/assets/cb1ef797-9871-4b54-95a1-e0fef0bda1fe" width="80" />
+Test Model  <img src="https://github.com/user-attachments/assets/324d6d30-2f30-4846-b136-f4864559e87a" width="80" />
 ----------
 
 
