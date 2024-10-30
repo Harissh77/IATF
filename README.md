@@ -88,7 +88,7 @@ _Build the infrastructure Code on AWS using 'Ubuntu' from my branch 'HanuFix-121
 
 
 
-Test Suite Components
+Test Components
 ---------------------
 
 
@@ -97,7 +97,7 @@ Test Suite Components
 | Unit test     | Configuration| [Terraform test](https://github.com/Harissh77/IATF/tree/main/infrastructure-tests/tests)   [Test Plan](https://github.com/Harissh77/IATF/blob/main/documentation/IATF-UnitTest.pdf) |
 | Integration Test     | Modules      |   [Test Plan](https://github.com/Harissh77/IATF/blob/main/documentation/IATF-IntegrationTest.pdf)|
 | System Integration Test  | Modules, configuration      |   terraform test|
-| Functionality Test  | Product functionality      |   pytest |
+| Best Practices| Product functionality      |   [Plan](https://github.com/Harissh77/IATF/blob/main/documentation/IATF-Bestpractices.pdf) |
 
 
 # Demo
