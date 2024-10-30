@@ -1,11 +1,13 @@
 # IATF
 ### Infrastructure Automation Test Framework
 
-Infrastructure as Code (IaC) testing is the process of validating and verifying the infrastructure configuration and deployment scripts to ensure they meet the desired state and requirements.
+
 
 
 Importance of Testing IaC
 -------------------------
+
+Infrastructure as Code (IaC) testing is the process of validating and verifying the infrastructure configuration and deployment scripts to ensure they meet the desired state and requirements. Here are some problem description explaing why IaC Testing is important like any other software testing. 
 
 |Problem  |Problem Description|
 |:-------------| :-----|
