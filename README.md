@@ -18,6 +18,8 @@ Importance of Testing IaC
 
 # Test Architecture
 
+Below is a list of potential test architecture options. After careful consideration, I recommend implementing Architecture 3.
+
 
 Architecture 1 
 --------------
@@ -41,6 +43,33 @@ Continous [Integration - Test - AutoFix - Deployment - Test](https://github.com/
 
 Continous Integration - Test - AutoFix - Deploy - Test 
 ------------------------------------------------------
+
+Integrating Artificial Intelligence (AI) into test architecture enhances testing efficiency, accuracy, and scalability. AI-powered testing enables:
+
+1. Intelligent test case generation
+2. Automated test data generation
+3. Predictive test maintenance
+4. Real-time test analytics
+5. Self-healing tests
+
+Tools
+-----
+
+Terraform - Provisioning and managing cloud and on-premises infrastructure
+Tftest -  Automated tests for Terraform configurations, ensuring infrastructure reliability and validity.
+Jenkins - For CI/CD pieplines
+Checkov - Automated security and compliance scanning tool for Infrastructure-as-Code (IaC) configurations
+Pytest - for Integration Tests. 
+
+Test Model 
+----------
+![building-block-icon-8](https://github.com/user-attachments/assets/3f787b46-cad6-4907-927d-6eb41b9d2576)
+
+
+Test cases will be automated as reusable building blocks, with each test modularized to perform a specific action. This modular design enables tests to be easily combined into tailored test suites for various scenarios, facilitating flexibility and scalability.
+
+
+
 
 
 Test Suite Components
