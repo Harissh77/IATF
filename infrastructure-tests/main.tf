@@ -32,21 +32,6 @@ resource "aws_instance" "server" {
   tags = {
     Name = "IATF-HG-Server"
   }
-  user_data = <<-EOF
-                #!/bin/bash
-	        sudo yum install python -y 
-                sudo yum install pip -y 
-                sudo python -m pip install pytest
-                sudo pip3 install checkov 
-                sudo checkov -d infrastructure-tests -o junitxml --output-file-path scanreport
-                sudo yum update -y
-                sudo yum install httpd -y
-                sudo systemctl start httpd
-                sudo systemctl enable httpd
-                echo "Welcome to the IATF Demo !" > /var/www/html/index.html
-                checkov -d infrastructure-tests -o junitxml --output-file-path scanreport
-                EOF
-   user_data_replace_on_change = true 
 }
 
 
