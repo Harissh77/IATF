@@ -31,6 +31,6 @@ sleep 1
 if [[ "${maincmd,,}" =~ "red hat"]] && [[  "${maincmd,,}" =~ "build and test" ]] && [[ "${maincmd,,}" =~ "with ai on"]] && [[ "${maincmd,,}" =~ "ap-south-1" ]]; then
      curl -v -X POST http://43.205.229.97:8080/job/IATF_Pipeline/build --user Castor:114e9ebf0dfaa8b197b045da220ee7ad86
 else
-     echo "Regrettably, I cannot process this command, either the regoin or the instance type is not suppoprted yet by IATF at the moment"
+     echo " echo "Regrettably, I cannot process this command. something's missing! Try rephrasing or check inputs""
 fi
 }
