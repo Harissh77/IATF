@@ -116,6 +116,15 @@ pipeline {
                 junit '**/target/surefire-reports/TEST-*.xml'
             }
         }
+
+stage('Checkov') {
+    steps {
+       script {
+         sh "checkov -d infrastructure-tests -o junitxml --output-file-path scanreport"
+         junit skipPublishingChecks: true, testResults: 'scanreport/results_junitxml.xml'
+       }
+    }
+  }
       
    }
 }
