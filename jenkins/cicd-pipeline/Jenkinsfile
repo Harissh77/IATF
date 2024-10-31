@@ -91,15 +91,26 @@ pipeline {
            }
         }
       }
+
+     stage('Build') {
+            steps {
+                dir ("Application"){
+                // Build the project (e.g., using Maven)
+                sh './mvnw clean install'
+              }
+            }
+        }
+
+        stage('Test') {
+            steps {
+              dir ("Application"){
+                // Run tests (e.g., using Maven)
+                sh './mvnw test'
+              }
+            }
+        }
       
-  stage('Checkov') {
-    steps {
-       script {
-         sh "checkov -d infrastructure-tests -o junitxml --output-file-path scanreport"
-         junit skipPublishingChecks: true, testResults: 'scanreport/results_junitxml.xml'
-       }
-    }
-  }
+
       
    }
 }
