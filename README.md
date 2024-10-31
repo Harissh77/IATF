@@ -110,9 +110,13 @@ Try it yourself !
 Steps 
 
 Cmd 1 > git clone https://github.com/Harissh77/IATF.git
+
 Cmd 2 > cd IATF
+
 Cmd 3 > source ./initializer.sh
+
 Cmd 4 > heyIATF
+
 enter the command : Build and Test the infrastructure Code on AWS using 'Red Hat Linux' with AI enabled
 
 Now you can login to http://43.205.230.97:8080/
