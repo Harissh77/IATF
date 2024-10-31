@@ -110,7 +110,12 @@ pipeline {
             }
         }
       
-
+      stage('Archive Results') {
+            steps {
+                // Archive test results
+                junit '**/target/surefire-reports/TEST-*.xml'
+            }
+        }
       
    }
 }
