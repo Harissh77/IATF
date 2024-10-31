@@ -1,0 +1,121 @@
+pipeline {
+  agent  any
+  
+    stages {
+
+      stage ('Checkout SCM'){
+        steps {
+          checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'githg', url: 'https://github.com/Harissh77/IATF.git']]])
+        }
+      }
+
+
+     
+      stage('Set Terraform path') {
+       steps {
+         script {
+            def tfHome = tool name: 'terraform'
+            env.PATH = "${tfHome}:${env.PATH}"
+         }
+     }
+  }
+
+  
+  stage('terraform init') {
+ 
+       steps {
+           dir ("infrastructure-tests") {
+                script {
+                    withAWS(roleAccount:'970547336061', role:'HGRole1', useNode: true) {
+                    sh 'terraform init -no-color'
+                    }
+             }
+           }
+        }
+      }
+
+  stage('terraform Plan') {
+ 
+       steps {
+           dir ("infrastructure-tests") {
+            
+               script {
+                    withAWS(roleAccount:'970547336061', role:'HGRole1', useNode: true) {
+                    sh 'terraform plan -no-color -out=plan.out'
+                    }
+               }
+            }
+        }
+      }
+
+
+  stage('Configuration Test') {
+       steps {
+           dir ("infrastructure-tests") {
+            
+               script {
+                    withAWS(roleAccount:'970547336061', role:'HGRole1', useNode: true) {
+                    sh 'terraform test -filter=tests/unit.tftest.hcl -no-color'
+                    }
+               }
+            }
+        }
+      }
+
+    stage('Instance Creation Test') {
+       steps {
+           dir ("infrastructure-tests") {
+            
+               script {
+                    withAWS(roleAccount:'970547336061', role:'HGRole1', useNode: true) {
+                    sh 'terraform test -filter=tests/testInstanceCreation.tftest.hcl -no-color'
+                    }
+               }
+            }
+        }
+      }
+  
+
+  stage('terraform Apply') {
+ 
+       steps {
+           dir ("infrastructure-tests") {
+            
+              script {
+                    withAWS(roleAccount:'970547336061', role:'HGRole1', useNode: true) {
+                    sh 'terraform apply -no-color -auto-approve plan.out'
+                    sh "terraform output"
+                    }
+              }
+            
+           }
+        }
+      }
+
+     stage('Build') {
+            steps {
+                dir ("Application"){
+                // Build the project (e.g., using Maven)
+                sh './mvnw clean install'
+              }
+            }
+        }
+
+        stage('Test') {
+            steps {
+              dir ("Application"){
+                // Run tests (e.g., using Maven)
+                sh './mvnw test'
+              }
+            }
+        }
+      
+      stage('Archive Results') {
+            steps {
+                // Archive test results
+                junit '**/target/surefire-reports/TEST-*.xml'
+            }
+        }
+      
+   }
+}
