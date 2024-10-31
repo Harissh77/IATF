@@ -103,17 +103,30 @@ Test Components
 # Demo
 
 
-Jenkins Pipeline 
-----------------
-
 A functional prototype has been developed, showcasing the automated provisioning of an AWS instance, execution of tests via TFtest, and resource cleanup. 
 
 Try it yourself !
 
+Steps 
 
-URL : http://44.244.72.199:8080/
+Cmd 1 > git clone https://github.com/Harissh77/IATF.git
+Cmd 2 > cd IATF
+Cmd 3 > source ./initializer.sh
+Cmd 4 > heyIATF
+enter the command : Build and Test the infrastructure Code on AWS using 'Red Hat Linux' with AI enabled
 
-User : MercurySparks
+Now you can login to http://43.205.230.97:8080/
+and see a Job has been triggered 
 
-Password : atlan2277?!
+Final Result:
+An instance will be created in the AWS with Pre and Post Conditions tests performed on the Infrastructure as Code. 
+
+
+Jenkins Pipeline 
+----------------
+
+Jenkins URL : http://43.205.230.97:8080/
+
+User : Castor
+Password shared seprately.
 
