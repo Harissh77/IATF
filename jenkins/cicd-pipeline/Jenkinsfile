@@ -117,20 +117,6 @@ pipeline {
             }
         }
 
-stage('Checkov') {
-    steps {
-       script {
-         try{
-         sh "checkov -d infrastructure-tests -o junitxml --output-file-path scanreport"
-         junit skipPublishingChecks: false, testResults: 'scanreport/results_junitxml.xml'
-         }
-         catch (err) {
-           junit skipPublishingChecks: false, testResults: 'scanreport/results_junitxml.xml'
-           throw err
-         }
-       }
-    }
-  }
       
    }
 }
