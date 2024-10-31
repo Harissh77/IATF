@@ -116,7 +116,7 @@ Cmd 4 > heyIATF
 enter the command : Build and Test the infrastructure Code on AWS using 'Red Hat Linux' with AI enabled
 
 Now you can login to http://43.205.230.97:8080/
-and see a Job has been triggered 
+and see a Job has been triggered , refer Jenkins Pipeline section for User / Password. 
 
 Final Result:
 An instance will be created in the AWS with Pre and Post Conditions tests performed on the Infrastructure as Code. 
