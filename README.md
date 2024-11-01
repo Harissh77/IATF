@@ -91,8 +91,12 @@ Test Components
 | Integration Test     | Modules      |   [Test Plan](https://github.com/Harissh77/IATF/blob/main/documentation/IATF-IntegrationTest.pdf)|
 | System Integration Test  | Modules, configuration      |   terraform test|
 | Governance & Auditing | Security Testing | [Test Plan](https://github.com/Harissh77/IATF/blob/main/documentation/Governance-Audit.pdf) |
-| Disaster & Recovery | High Availability  | Test Plan |
+| Disaster & Recovery | High Availability  | [Test Plan](https://github.com/Harissh77/IATF/blob/main/documentation/DisasterRecovery.pdf) |
 | Best Practices| Product functionality      |   [Plan](https://github.com/Harissh77/IATF/blob/main/documentation/IATF-Bestpractices.pdf) |
+
+
+# Incident Management & Alerts
+
 
 
 # Governance & Auditing Test 
@@ -111,17 +115,29 @@ The governance and auditing test will cover the following areas:
 4. Security controls and access management
 5. Data integrity and backup procedures
 
-My solution of choice today is Checkov, Checkov is a governance and auditing tool. It is an open-source tool that enables users to scan and monitor their infrastructure-as-code (IaC) configurations for security and compliance issues. Checkov seamlessly integrates with Jenkins, enabling automated security and compliance scanning within Continuous Integration/Continuous Deployment (CI/CD) pipelines. This integration allows for efficient reporting on specific projects, providing timely insights into infrastructure-as-code (IaC) configurations.
+My solution of choice is Checkov, Checkov is a governance and auditing tool. It is an open-source tool that enables users to scan and monitor their infrastructure-as-code (IaC) configurations for security and compliance issues. Checkov seamlessly integrates with Jenkins, enabling automated security and compliance scanning within Continuous Integration/Continuous Deployment (CI/CD) pipelines. This integration allows for efficient reporting on specific projects, providing timely insights into infrastructure-as-code (IaC) configurations.
+
+Refer : https://www.checkov.io/
 
 I have developed a demo demonstration showcasing the integration of Checkov with Jenkins Pipeline, highlighting automated security and compliance scanning capabilities for infrastructure-as-code configurations.
 
 # Disaster And Recovery Test 
 
+Objective :
+Verify the ability to recover critical systems and data in the event of a disaster or outage. Conducting regular DR testing ensures your organization's ability to recover from disasters and maintain business continuity.
 
+Scope:
+
+1. IT infrastructure
+2. Applications
+3. Data
+
+My solution of choice is Gremlin. Gremlin is a chaos engineering and resilience testing platform designed to help organizations improve the reliability and resilience of their systems. It allows users to simulate real-world failures and disruptions in a controlled environment, enabling them to identify and fix potential issues before they become incidents.
+
+Refer : https://www.gremlin.com/blog/introducing-scenarios
 
  
 # Demo
-|:----:|
 
 
 A functional prototype has been developed, showcasing the automated provisioning of an AWS instance, execution of tests via TFtest, and resource cleanup. 
