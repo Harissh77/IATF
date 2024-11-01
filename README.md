@@ -25,21 +25,11 @@ Infrastructure as Code (IaC) testing is the process of validating and verifying 
 
 Below is a list of potential test architecture options. Each architecture dictates its unique testing approach, outlining the stages and methodologies for effective validationAfter careful consideration, I recommend implementing Architecture 3.
 
+| **Architecture 1**  | Continous [Integration - Deployment - Test](https://github.com/Harissh77/IATF/blob/main/documentation/Architecture1.png)   |
+| **Architecture 2**  | Continous [Integration - Test - Deployment - Test](https://github.com/Harissh77/IATF/blob/main/documentation/Architecture2.png) |
+| **Architecture 3**  | Continous [Integration - Test - AISeflHeal - Deployment - Test](https://github.com/Harissh77/IATF/blob/main/documentation/Architecture3.png) | 
 
-Architecture 1 
---------------
 
-Continous [Integration - Deployment - Test](https://github.com/Harissh77/IATF/blob/main/documentation/Architecture1.png)
-
-Architecture 2 
---------------
-
-Continous [Integration - Test - Deployment - Test](https://github.com/Harissh77/IATF/blob/main/documentation/Architecture2.png)
-
-Architecture 3
---------------
-
-Continous [Integration - Test - AutoFix - Deployment - Test](https://github.com/Harissh77/IATF/blob/main/documentation/Architecture3.png) 
                  
 ##
 
