@@ -91,6 +91,7 @@ Test Components
 | Integration Test     | Modules      |   [Test Plan](https://github.com/Harissh77/IATF/blob/main/documentation/IATF-IntegrationTest.pdf)|
 | System Integration Test  | Modules, configuration      |   terraform test|
 | Governance & Auditing | Security Testing | [Test Plan](https://github.com/Harissh77/IATF/blob/main/documentation/Governance-Audit.pdf) |
+| Disaster & Recovery | High Availability  | Test Plan |
 | Best Practices| Product functionality      |   [Plan](https://github.com/Harissh77/IATF/blob/main/documentation/IATF-Bestpractices.pdf) |
 
 
@@ -114,10 +115,13 @@ My solution of choice today is Checkov, Checkov is a governance and auditing too
 
 I have developed a demo demonstration showcasing the integration of Checkov with Jenkins Pipeline, highlighting automated security and compliance scanning capabilities for infrastructure-as-code configurations.
 
+# Disaster And Recovery Test 
+
 
 
  
 # Demo
+|:----:|
 
 
 A functional prototype has been developed, showcasing the automated provisioning of an AWS instance, execution of tests via TFtest, and resource cleanup. 
