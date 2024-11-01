@@ -97,9 +97,33 @@ Test Components
 | Unit test     | Configuration| [Terraform test](https://github.com/Harissh77/IATF/tree/main/infrastructure-tests/tests)   [Test Plan](https://github.com/Harissh77/IATF/blob/main/documentation/IATF-UnitTest.pdf) |
 | Integration Test     | Modules      |   [Test Plan](https://github.com/Harissh77/IATF/blob/main/documentation/IATF-IntegrationTest.pdf)|
 | System Integration Test  | Modules, configuration      |   terraform test|
+| Governance & Auditing | Security Testing | Test Plan |
 | Best Practices| Product functionality      |   [Plan](https://github.com/Harissh77/IATF/blob/main/documentation/IATF-Bestpractices.pdf) |
 
 
+# Governance & Auditing Test 
+
+Objective : 
+
+To ensure that the organization's IT infrastructure and systems comply with regulatory requirements, industry standards, and internal policies.
+By conducting regular governance and auditing tests, organizations can ensure compliance, security, and data integrity, ultimately reducing risk and improving overall IT infrastructure governance.
+
+Scope:
+The governance and auditing test will cover the following areas:
+
+1. Compliance with regulatory requirements
+2. Adherence to industry standards
+3. Enforcement of internal policies and procedures
+4. Security controls and access management
+5. Data integrity and backup procedures
+
+My solution of choice today is Checkov, Checkov is a governance and auditing tool. It is an open-source tool that enables users to scan and monitor their infrastructure-as-code (IaC) configurations for security and compliance issues. Checkov seamlessly integrates with Jenkins, enabling automated security and compliance scanning within Continuous Integration/Continuous Deployment (CI/CD) pipelines. This integration allows for efficient reporting on specific projects, providing timely insights into infrastructure-as-code (IaC) configurations.
+
+I have developed a demo demonstration showcasing the integration of Checkov with Jenkins Pipeline, highlighting automated security and compliance scanning capabilities for infrastructure-as-code configurations.
+
+
+
+ 
 # Demo
 
 
