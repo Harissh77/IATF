@@ -97,7 +97,7 @@ Test Components
 | Unit test     | Configuration| [Terraform test](https://github.com/Harissh77/IATF/tree/main/infrastructure-tests/tests)   [Test Plan](https://github.com/Harissh77/IATF/blob/main/documentation/IATF-UnitTest.pdf) |
 | Integration Test     | Modules      |   [Test Plan](https://github.com/Harissh77/IATF/blob/main/documentation/IATF-IntegrationTest.pdf)|
 | System Integration Test  | Modules, configuration      |   terraform test|
-| Governance & Auditing | Security Testing | Test Plan |
+| Governance & Auditing | Security Testing | [Test Plan](https://github.com/Harissh77/IATF/blob/main/documentation/Governance-Audit.pdf) |
 | Best Practices| Product functionality      |   [Plan](https://github.com/Harissh77/IATF/blob/main/documentation/IATF-Bestpractices.pdf) |
 
 
