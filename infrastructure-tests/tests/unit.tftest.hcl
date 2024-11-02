@@ -1,7 +1,7 @@
 variables {
-  instance_name= "HGInstance"
+  instance_name= var.instance_name
 }
-run "Test1_Resource_Name_Formar_Check" {
+run "Test1_Resource_Name_Format_Check" {
 command = plan
 assert {
 	condition = startswith(aws_instance.server.tags.Name, "IATF")
