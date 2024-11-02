@@ -24,10 +24,6 @@ type= string
 default = "./config/credentials"
 } 
 
-variable "instance_name" {
-type = string
-default = "pipeline"
-}
 
 resource "aws_instance" "server" {
   ami = var.ami_id
