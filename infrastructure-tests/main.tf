@@ -11,7 +11,7 @@ terraform {
 
 locals {
   timestamp = "${timestamp()}"
-  Formated = "${replace("${local.timestamp}", "/[-| |T|Z|:]/", "")}"
+  formatedt = "${replace("${local.timestamp}", "/[-| |T|Z|:]/", "")}"
 }
 
 variable "AWS_CONFIG_FILE" { 
@@ -31,7 +31,7 @@ resource "aws_instance" "server" {
   vpc_security_group_ids = [ aws_security_group.instance.id ]
   availability_zone = var.availability_zone
   tags = {
-    Name = "${var.instance_name}-${strftime("%Y%m%d%H%M%S")}"
+    Name = format("%s-%s", var.instance_name, local.formatedt)
   }
 }
 
