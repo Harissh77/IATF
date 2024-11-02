@@ -1,6 +1,4 @@
-variables {
-  instance_name= var.instance_name
-}
+
 run "Test1_Resource_Name_Format_Check" {
 command = plan
 assert {
