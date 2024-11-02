@@ -57,7 +57,8 @@ pipeline {
                     withAWS(roleAccount:'970547336061', role:'HGRole1', useNode: true) {
                     sh 'terraform test -filter=tests/unit.tftest.hcl -no-color'
                     }
-                } catch (Exception e) {
+                } 
+             }catch (Exception e) {
                   echo 'Exception occurred: ' + e.toString()
                  }
             }
