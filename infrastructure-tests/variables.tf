@@ -4,6 +4,10 @@ variable "instance_type" {
   default = "t2.micro"
 }
 
+variable "instance_name" {
+  default = "IATF-Instance"
+}
+
 variable "ami_id" {
     description = "AWS Image ID "
     type = string
