@@ -97,6 +97,52 @@ Test Components
 
 # Incident Management & Alerts
 
+Incident Management is the process of identifying, analyzing, migitating and resolving incidents in a timely and efficient manner to minimize impact on business operations, and customers.
+
+Key Objectives:
+-----------
+1. Restore normal service operation as quickly as possible.
+2. Minimize impact on business operations and customers.
+3. Identify and mitigate root causes.
+4. Document and communicate incident details.
+5. Improve incident response processes.
+
+Tools (of my choice)
+--
+
+Service Management - Jira Service Management
+Monitoring - Grafana
+Alerting - Pagerduty 
+Runbook - Confluence / In-house tools 
+Communication - Slack 
+
+
+Runbook
+--
+
+A runbook is a comprehensive document or guide outlining standardized procedures, checklists, and protocols for Infrastructure operations, incident management, and problem resolution. It provides step-by-step instructions for handling specific situations, ensuring consistency and efficiency.
+
+**Who should use runbook?**
+
+On-call engineers , Enginnering /  Operations Team
+
+**When a runbook should be used?**
+
+1. Daily/weekly/monthly maintenance tasks
+2. Regular backups and data archiving
+3. Scheduled software updates
+4. Routine monitoring and reporting
+
+Best Practices:
+--
+
+1. Define clear incident management processes.
+2. Establish communication protocols.
+3. Provide training and resources.
+4. Continuously review and improve.
+5. Every customer impact incidents should go thru CAPA (Corrective Action Preventive Action) 
+6. Implement automation and integration.
+   
 
 
 # Governance & Auditing Test 
