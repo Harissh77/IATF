@@ -31,7 +31,7 @@ resource "aws_instance" "server" {
   vpc_security_group_ids = [ aws_security_group.instance.id ]
   availability_zone = var.availability_zone
   tags = {
-    Name = merge(var.instance_name,local.Formated)
+    Name = var.instance_name + local.Formated
   }
 }
 
