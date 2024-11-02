@@ -9,6 +9,11 @@ terraform {
   required_version = ">= 1.2.0"
 }
 
+locals {
+  timestamp = "${timestamp()}"
+  Formated = "${replace("${local.timestamp}", "/[-| |T|Z|:]/", "")}"
+}
+
 variable "AWS_CONFIG_FILE" { 
 type= string 
 default = "./config/config"
@@ -30,7 +35,7 @@ resource "aws_instance" "server" {
   vpc_security_group_ids = [ aws_security_group.instance.id ]
   availability_zone = var.availability_zone
   tags = {
-    Name = var.instance_name
+    Name = ${var.instance_name}_${local.Formated}
   }
 }
 
