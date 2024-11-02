@@ -5,7 +5,7 @@ variable "instance_type" {
 }
 
 variable "instance_name" {
-  default = "IATF-Instance-1231231231234"
+  default = "IATF-Instance"
 }
 
 variable "ami_id" {
