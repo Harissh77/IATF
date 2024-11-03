@@ -254,6 +254,8 @@ Refer : https://www.checkov.io/
 
 I have developed a demo demonstration showcasing the integration of Checkov with Jenkins Pipeline, highlighting automated security and compliance scanning capabilities for infrastructure-as-code configurations.
 
+--------------------------------------------------------------
+
 # Disaster And Recovery Test 
 
 Objective :
