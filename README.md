@@ -29,7 +29,7 @@ Infrastructure as Code (IaC) testing is the process of validating and verifying 
 
 <img src="https://github.com/user-attachments/assets/fd435433-8b0d-46a0-ac83-8f0e8cece0a3" width="750" />
 
-Below is a list of potential test Test Implementation Strategies. Each option dictates its unique testing approach, outlining the stages and methodologies for effective validationAfter careful consideration, I recommend implementing Test Implementation Strategy 3.
+Below is a list of potential Test Implementation Strategies. Each option dictates its unique testing approach, outlining the stages and methodologies for effective validation after careful consideration, I recommend implementing Test Implementation Strategy 3.
 
 
 |Name  |Implementation Prototype|
