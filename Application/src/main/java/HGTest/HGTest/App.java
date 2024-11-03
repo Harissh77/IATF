@@ -8,4 +8,7 @@ public class App {
     public static void DBApp(String[] args) throws Exception {
         System.out.println("Oracle DB");
     }
+    public static void OperatingSystem(String[] args) throws Exception {
+        System.out.println("Oracle DB");
+    }
 }
