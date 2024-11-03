@@ -42,7 +42,7 @@ Below is a list of potential Test Implementation Strategies. Each option dictate
                  
 ##
 
-# Implementation Strategy 3 *(Recommended)*
+## Implementation Strategy 3 *(Recommended)*
 
 
 **Continous Integration - Test - AutoFix - Deploy - Test **
