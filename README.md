@@ -121,8 +121,8 @@ In this Automation Framework we integrate Tests in 2 phases and tests can be int
                }
             }
         }
-      }
-   stage(Instance Creation Test) {
+      } 
+      stage('Instance Creation Test') {
        steps {
            dir ("infrastructure-tests") {
             
