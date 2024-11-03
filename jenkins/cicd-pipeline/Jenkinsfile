@@ -85,6 +85,7 @@ pipeline {
                     withAWS(roleAccount:'970547336061', role:'HGRole1', useNode: true) {
                     sh 'terraform apply -no-color -auto-approve plan.out'
                     sh "terraform output"
+                    sh "terradform output > ../Application/src/test/resources/payload.txt"
                     }
               }
             
@@ -96,6 +97,7 @@ pipeline {
             steps {
                 dir ("Application"){
                 // Build the project (e.g., using Maven)
+                sh "cat ./src/test/resources/payload.txt"
                 sh './mvnw clean install'
               }
             }
