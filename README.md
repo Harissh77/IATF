@@ -236,8 +236,8 @@ On-call engineers , Enginnering /  Operations Team
 
 Objective : 
 
-To ensure that the organization's IT infrastructure and systems comply with regulatory requirements, industry standards, and internal policies.
-By conducting regular governance and auditing tests, organizations can ensure compliance, security, and data integrity, ultimately reducing risk and improving overall IT infrastructure governance.
+To ensure that the organization's IT infrastructure and systems comply with regulatory requirements, industry standards and internal policies.
+By conducting regular governance and auditing tests, organizations can ensure compliance, security and data integrity, reducing risk and improving overall IT infrastructure governance.
 
 Scope:
 The governance and auditing test will cover the following areas:
@@ -259,7 +259,7 @@ I have developed a demo demonstration showcasing the integration of Checkov with
 # Disaster And Recovery Test 
 
 Objective :
-Verify the ability to recover critical systems and data in the event of a disaster or outage. Conducting regular DR testing ensures your organization's ability to recover from disasters and maintain business continuity.
+Verify the ability to recover critical systems and data in the event of a disaster or outage. Conducting regular DR testing ensures organization's ability to recover from disasters and maintain business continuity.
 
 Scope:
 
