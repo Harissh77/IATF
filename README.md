@@ -103,11 +103,13 @@ Test Components
 
 Automated testing is a crucial aspect of modern software development, ensuring that code changes do not introduce bugs or break existing functionality. Integrating automated tests into the Continuous Integration/Continuous Deployment (CI/CD) pipeline streamlines quality assurance, reduces manual testing efforts, and accelerates time-to-market.
 
-In this Automation Framework we integrate Tests in 2 phases. 
+In this Automation Framework we integrate Tests in 2 phases and tests can be integrated with CI/CD pipeline by adding the stages as shown below. 
 
-1. Pre-Deployment Tests
 
-   `  stage('Configuration Test') {
+**1. Pre-Deployment Tests**
+     
+    `
+    stage('Configuration Test') {
        steps {
            dir ("infrastructure-tests") {
             
@@ -118,9 +120,43 @@ In this Automation Framework we integrate Tests in 2 phases.
                }
             }
         }
-      }`
+      }
 
-3. Post-Deployment Tests
+   stage('Instance Creation Test') {
+       steps {
+           dir ("infrastructure-tests") {
+            
+               script {
+                    withAWS(roleAccount:'970547336061', role:'HGRole1', useNode: true) {
+                    sh 'terraform test -filter=tests/testInstanceCreation.tftest.hcl -no-color'
+                    }
+               }
+            }
+        }
+      }
+   `
+
+**2. Post-Deployment Tests**
+
+`
+       stage('Test') {
+            steps {
+              dir ("Application"){
+                // Run tests (e.g., using Maven)
+                sh './mvnw test'
+              }
+            }
+        }
+      
+      stage('Archive Results') {
+            steps {
+                // Archive test results
+                junit '**/target/surefire-reports/TEST-*.xml'
+            }
+        }
+      `
+   
+   
 
 
 -----------------------------
