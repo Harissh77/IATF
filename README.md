@@ -93,12 +93,35 @@ Test Components
 
 | Test Type       | Use Case          | Terraform configuration  |
 | ------------- |:-------------:| -----:|
-| Unit test     | Configuration| [Terraform test](https://github.com/Harissh77/IATF/tree/main/infrastructure-tests/tests)   [Test Plan](https://github.com/Harissh77/IATF/blob/main/documentation/IATF-UnitTest.pdf) |
+| Unit test     | Configuration|   [Test Plan](https://github.com/Harissh77/IATF/blob/main/documentation/IATF-UnitTest.pdf) |
 | Integration Test     | Modules      |   [Test Plan](https://github.com/Harissh77/IATF/blob/main/documentation/IATF-IntegrationTest.pdf)|
-| System Integration Test  | Modules, configuration      |   terraform test|
 | Governance & Auditing | Security Testing | [Test Plan](https://github.com/Harissh77/IATF/blob/main/documentation/Governance-Audit.pdf) |
 | Disaster & Recovery | High Availability  | [Test Plan](https://github.com/Harissh77/IATF/blob/main/documentation/DisasterRecovery.pdf) |
 | Best Practices| Product functionality      |   [Plan](https://github.com/Harissh77/IATF/blob/main/documentation/IATF-Bestpractices.pdf) |
+
+## CICD Pipeline Test Integration 
+
+Automated testing is a crucial aspect of modern software development, ensuring that code changes do not introduce bugs or break existing functionality. Integrating automated tests into the Continuous Integration/Continuous Deployment (CI/CD) pipeline streamlines quality assurance, reduces manual testing efforts, and accelerates time-to-market.
+
+In this Automation Framework we integrate Tests in 2 phases. 
+
+1. Pre-Deployment Tests
+
+   `  stage('Configuration Test') {
+       steps {
+           dir ("infrastructure-tests") {
+            
+               script {
+                    withAWS(roleAccount:'970547336061', role:'HGRole1', useNode: true) {
+                    sh 'terraform test -filter=tests/unit.tftest.hcl -no-color'
+                    }
+               }
+            }
+        }
+      }`
+
+3. Post-Deployment Tests
+
 
 -----------------------------
 # Incident Management & Alerts
