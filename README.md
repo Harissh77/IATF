@@ -197,10 +197,15 @@ Incident Management is the process of identifying, analyzing, migitating and res
 **Tools (of my choice):**
 
 Service Management - Jira Service Management
+
 Monitoring - Grafana
+
 Alerting - Pagerduty 
+
 Runbook - Confluence / In-house tools 
+
 Communication - Slack 
+
 
 
 **Runbook:**
@@ -214,7 +219,7 @@ On-call engineers , Enginnering /  Operations Team
 
 **When a runbook should be used?**
 
-1. Daily/weekly/monthly maintenance tasks
+1. Scheduled maintenance tasks
 2. Regular backups and data archiving
 3. Scheduled software updates
 4. Routine monitoring and reporting
