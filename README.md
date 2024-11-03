@@ -20,6 +20,7 @@ Infrastructure as Code (IaC) testing is the process of validating and verifying 
 |Security Vulnerabilities |  Un-tested IaC configurations may expose infrastructure to security risks, such as unpatched vulnerabilities or unauthorized access controls |
 
 ##
+------------------------------------------------
 
 # Test Architecture
 
@@ -94,21 +95,20 @@ Test Components
 | Disaster & Recovery | High Availability  | [Test Plan](https://github.com/Harissh77/IATF/blob/main/documentation/DisasterRecovery.pdf) |
 | Best Practices| Product functionality      |   [Plan](https://github.com/Harissh77/IATF/blob/main/documentation/IATF-Bestpractices.pdf) |
 
-
+-----------------------------
 # Incident Management & Alerts
 
 Incident Management is the process of identifying, analyzing, migitating and resolving incidents in a timely and efficient manner to minimize impact on business operations, and customers.
 
-Key Objectives:
------------
+**Key Objectives:**
+
 1. Restore normal service operation as quickly as possible.
 2. Minimize impact on business operations and customers.
 3. Identify and mitigate root causes.
 4. Document and communicate incident details.
 5. Improve incident response processes.
 
-Tools (of my choice)
---
+**Tools (of my choice):**
 
 Service Management - Jira Service Management
 Monitoring - Grafana
@@ -117,8 +117,8 @@ Runbook - Confluence / In-house tools
 Communication - Slack 
 
 
-Runbook
---
+**Runbook:**
+
 
 A runbook is a comprehensive document or guide outlining standardized procedures, checklists, and protocols for Infrastructure operations, incident management, and problem resolution. It provides step-by-step instructions for handling specific situations, ensuring consistency and efficiency.
 
@@ -133,8 +133,8 @@ On-call engineers , Enginnering /  Operations Team
 3. Scheduled software updates
 4. Routine monitoring and reporting
 
-Best Practices:
---
+**Best Practices:**
+
 
 1. Define clear incident management processes.
 2. Establish communication protocols.
@@ -144,6 +144,7 @@ Best Practices:
 6. Implement automation and integration.
    
 
+-------------
 
 # Governance & Auditing Test 
 
