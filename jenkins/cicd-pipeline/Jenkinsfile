@@ -85,7 +85,7 @@ pipeline {
                     withAWS(roleAccount:'970547336061', role:'HGRole1', useNode: true) {
                     sh 'terraform apply -no-color -auto-approve plan.out'
                     sh "terraform output"
-                    sh "terradform output > ../Application/src/test/resources/payload.txt"
+                    sh "terraform output > ../Application/src/test/resources/payload.txt"
                     }
               }
             
