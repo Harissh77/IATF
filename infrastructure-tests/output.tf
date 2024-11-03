@@ -23,11 +23,6 @@ output "instance_state" {
     value = aws_instance.server.instance_state   
 }
 
-output "cpu_core_count" {
-    description = "CPU Core Count  "
-    value = aws_instance.server.cpu_core_count   
-}
-
 output "security_groups" {
     description = "Security Groups "
     value = aws_instance.server.security_groups   
