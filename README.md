@@ -24,14 +24,16 @@ Infrastructure as Code (IaC) testing is the process of validating and verifying 
 
 # Test Architecture
 
-Below is a list of potential test architecture options. Each architecture dictates its unique testing approach, outlining the stages and methodologies for effective validationAfter careful consideration, I recommend implementing Architecture 3.
+<img src="https://github.com/user-attachments/assets/fd435433-8b0d-46a0-ac83-8f0e8cece0a3" width="250" />
+
+Below is a list of potential test Test Implementation Strategies. Each option dictates its unique testing approach, outlining the stages and methodologies for effective validationAfter careful consideration, I recommend implementing Test Implementation Strategy 3.
 
 
-|Name  |Architecture Prototype|
+|Name  |Implementation Prototype|
 |:-------------| :---------------|
-| **Architecture 1**  | Continous [Integration - Deployment - Test](https://github.com/Harissh77/IATF/blob/main/documentation/Architecture1.png)   |
-| **Architecture 2**  | Continous [Integration - Test - Deployment - Test](https://github.com/Harissh77/IATF/blob/main/documentation/Architecture2.png) |
-| **Architecture 3**  | Continous [Integration - Test - AISeflHeal - Deployment - Test](https://github.com/Harissh77/IATF/blob/main/documentation/Architecture3.png) | 
+| **Implementation Strategy 1**  | Continous [Integration - Deployment - Test](https://github.com/Harissh77/IATF/blob/main/documentation/Architecture1.png)   |
+| **Implementation Strategy 2**  | Continous [Integration - Test - Deployment - Test](https://github.com/Harissh77/IATF/blob/main/documentation/Architecture2.png) |
+| **Implementation Strategy 3**  | Continous [Integration - Test - AISeflHeal - Deployment - Test](https://github.com/Harissh77/IATF/blob/main/documentation/Architecture3.png) | 
 
 
                  
