@@ -109,6 +109,7 @@ In this Automation Framework we integrate Tests in 2 phases and tests can be int
 **1. Pre-Deployment Tests**
      
     `
+    
     stage('Configuration Test') {
        steps {
            dir ("infrastructure-tests") {
@@ -133,6 +134,7 @@ In this Automation Framework we integrate Tests in 2 phases and tests can be int
             }
         }
       }
+      
    `
 
 **2. Post-Deployment Tests**
