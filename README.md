@@ -121,8 +121,7 @@ In this Automation Framework we integrate Tests in 2 phases and tests can be int
             }
         }
       }
-
-   stage('Instance Creation Test') {
+   stage(Instance Creation Test) {
        steps {
            dir ("infrastructure-tests") {
             
@@ -138,7 +137,8 @@ In this Automation Framework we integrate Tests in 2 phases and tests can be int
 
 **2. Post-Deployment Tests**
 
-`
+      `
+      
        stage('Test') {
             steps {
               dir ("Application"){
@@ -147,13 +147,13 @@ In this Automation Framework we integrate Tests in 2 phases and tests can be int
               }
             }
         }
-      
-      stage('Archive Results') {
+      stage(Archive Results) {
             steps {
                 // Archive test results
                 junit '**/target/surefire-reports/TEST-*.xml'
             }
         }
+        
       `
    
    
