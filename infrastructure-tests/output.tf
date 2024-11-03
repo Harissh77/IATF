@@ -20,7 +20,7 @@ output "instance_type" {
 
 output "instance_state" {
     description = "Instance State "
-    value = aws_instance.server.instnce_state   
+    value = aws_instance.server.instance_state   
 }
 
 output "cpu_core_count" {
