@@ -7,3 +7,38 @@ output "instance_name" {
     description = "Name of the Instance"
     value = aws_instance.server.tags.Name
 }
+
+output "availability_zone" {
+    description = "Availability Zone "
+    value = aws_instance.server.availability_zone
+}
+
+output "instance_type" {
+    description = "Instance Type "
+    value = aws_instance.server.instance_type
+}
+
+output "instance_state" {
+    description = "Instance State "
+    value = aws_instance.server.instnce_state   
+}
+
+output "cpu_core_count" {
+    description = "CPU Core Count  "
+    value = aws_instance.server.cpu_core_count   
+}
+
+output "security_groups" {
+    description = "Security Groups "
+    value = aws_instance.server.security_groups   
+}
+
+output "tenancy" {
+    description = "Tenancy Name "
+    value = aws_instance.server.tenancy   
+}
+
+output "subnet_id" {
+    description = "Instance Type "
+    value = aws_instance.server.subnet_id   
+}
