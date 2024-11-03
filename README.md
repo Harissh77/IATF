@@ -158,7 +158,26 @@ In this Automation Framework we integrate Tests in 2 phases and tests can be int
         
       `
    
-   
+
+## AI with Test Automation
+
+Artificial Intelligence (AI) enhances test automation by improving test efficiency, accuracy, and maintenance. AI-powered test automation tools analyze application functionality, identify test cases, and execute tests
+
+1. Intelligent Test Case Generation: AI generates test cases based on application functionality.
+2. Self-Healing Tests: AI updates tests automatically when application changes.
+3. Predictive Analytics: AI identifies potential defects before testing.
+4. Test Optimization: AI reduces test execution time.
+5. Improved Accuracy: AI minimizes false positives/negatives
+
+**Following are some of the AI Tools that support test automation**
+
+1. Applitools: AI-powered visual testing.
+2. TestCraft: AI-driven test automation.
+3. Mabl: AI-powered test automation.
+4. Functionize: AI-driven testing.
+5. Appvance: AI-powered testing.
+
+**However**  AI models require continuous training, AI requires high-quality test data, Integrating AI with existing test frameworks is quite challenging and an expert team is needed to keep track of the automated tests, funcational areas being covered / skipped and interpreting the test reports etc. 
 
 
 -----------------------------
@@ -166,7 +185,7 @@ In this Automation Framework we integrate Tests in 2 phases and tests can be int
 
 Incident Management is the process of identifying, analyzing, migitating and resolving incidents in a timely and efficient manner to minimize impact on business operations, and customers.
 
-**Key Objectives:**
+**Key Objectives:** 
 
 1. Restore normal service operation as quickly as possible.
 2. Minimize impact on business operations and customers.
