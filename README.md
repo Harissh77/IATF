@@ -45,8 +45,8 @@ Below is a list of potential Test Implementation Strategies. Each option dictate
 # Implementation Strategy 3 *(Recommended)*
 
 
-Continous Integration - Test - AutoFix - Deploy - Test 
-------------------------------------------------------
+**Continous Integration - Test - AutoFix - Deploy - Test **
+
 
 Integrating Artificial Intelligence (AI) into test architecture enhances testing efficiency, accuracy, and scalability. AI-powered testing enables:
 
@@ -56,8 +56,8 @@ Integrating Artificial Intelligence (AI) into test architecture enhances testing
 4. Real-time test analytics
 5. Self-healing tests
 
-Tools
------
+## Tools
+
 
 **Terraform** - Provisioning and managing cloud and on-premises infrastructure
 
@@ -69,8 +69,8 @@ Tools
 
 **Pytest** - for Integration Tests. 
 
-Test Model  <img src="https://github.com/user-attachments/assets/324d6d30-2f30-4846-b136-f4864559e87a" width="80" />
-----------
+## Test Model  <img src="https://github.com/user-attachments/assets/324d6d30-2f30-4846-b136-f4864559e87a" width="80" />
+
 
 
 Test cases will be automated as reusable building blocks, with each test modularized to perform a specific action. This modular design enables tests to be easily combined into tailored test suites for various scenarios, facilitating flexibility and scalability. 
@@ -87,8 +87,8 @@ _Build the infrastructure Code on AWS using 'Ubuntu' from my branch 'HanuFix-121
 
 
 
-Test Components
----------------------
+## Test Components
+
 
 
 | Test Type       | Use Case          | Terraform configuration  |
@@ -181,6 +181,7 @@ Artificial Intelligence (AI) enhances test automation by improving test efficien
 
 
 -----------------------------
+
 # Incident Management & Alerts
 
 Incident Management is the process of identifying, analyzing, migitating and resolving incidents in a timely and efficient manner to minimize impact on business operations, and customers.
@@ -268,6 +269,7 @@ My solution of choice is Gremlin. Gremlin is a chaos engineering and resilience 
 
 Refer : https://www.gremlin.com/blog/introducing-scenarios
 
+----------------------------------------------------------------------
  
 # Demo
 
@@ -295,8 +297,8 @@ Final Result:
 An instance will be created in the AWS with Pre and Post Conditions tests performed on the Infrastructure as Code. 
 
 
-Jenkins Pipeline 
-----------------
+## Jenkins Pipeline 
+
 
 Jenkins URL : http://43.205.230.97:8080/
 
