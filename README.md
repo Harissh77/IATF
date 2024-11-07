@@ -67,7 +67,7 @@ Integrating Artificial Intelligence (AI) into test architecture enhances testing
 
 **Checkov** - Automated security and compliance scanning tool for Infrastructure-as-Code (IaC) configurations
 
-**Pytest** - for Integration Tests. 
+**Junit** - for Integration Tests. 
 
 ## Test Model  <img src="https://github.com/user-attachments/assets/324d6d30-2f30-4846-b136-f4864559e87a" width="80" />
 
