@@ -69,6 +69,8 @@ Integrating Artificial Intelligence (AI) into test architecture enhances testing
 
 **Junit** - for Integration Tests. 
 
+**Testmo** - for Test Reporting
+
 ## Test Model  <img src="https://github.com/user-attachments/assets/324d6d30-2f30-4846-b136-f4864559e87a" width="80" />
 
 
@@ -301,7 +303,10 @@ Now you can login to http://43.205.229.97:8080/
 and see a Job has been triggered , refer Jenkins Pipeline section for User / Password. 
 
 Final Result:
-An instance will be created in the AWS with Pre and Post Conditions tests performed on the Infrastructure as Code. 
+An instance will be created in the AWS with Pre and Post Conditions tests performed on the Infrastructure as Code.
+
+Test Results:
+https://harishgautham.testmo.net/automation/runs/1
 
 
 ## Jenkins Pipeline 
