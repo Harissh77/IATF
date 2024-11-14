@@ -108,13 +108,23 @@ pipeline {
               dir ("Application"){
                 // Run tests (e.g., using Maven)
                 sh './mvnw test'
+  
+              }
+            }
+        } 
+
+        stage('TestReport') {
+            steps {
+              dir ("Reports"){
+                // Generate Reports
+                sh 'chmod 777 ./testreport.sh | ./testreport.sh'
                 sh 'testmo automation:run:submit --instance https://harishgautham.testmo.net --project-id 1 --name "Test Execution" --source "IntegrationTest" --results **/target/surefire-reports/TEST-*.xml'
               }
             }
         } 
       
       stage('Archive Results') {
-            steps {
+            steps { 
                 // Archive test results
                 junit '**/target/surefire-reports/TEST-*.xml'
             }
