@@ -117,7 +117,7 @@ pipeline {
             steps {
               dir ("Reports"){
                 // Generate Reports
-                sh 'chmod 777 ./testreport.sh | ./testreport.sh'
+                sh './testreport.sh | chmod 777 ./testreport.sh'
               }
             }
         } 
