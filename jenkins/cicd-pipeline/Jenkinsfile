@@ -108,7 +108,7 @@ pipeline {
               dir ("Application"){
                 // Run tests (e.g., using Maven)
                 sh './mvnw test'
-                sh 'export TESTMO_TOKEN=`cat /etc/testmo/testtok` | testmo automation:run:submit --instance https://harishgautham.testmo.net --project-id 1 --name "Test Execution" --source "IntegrationTest" --results **/target/surefire-reports/TEST-*.xml'
+                sh 'testmo automation:run:submit --instance https://harishgautham.testmo.net --project-id 1 --name "Test Execution" --source "IntegrationTest" --results **/target/surefire-reports/TEST-*.xml'
               }
             }
         } 
