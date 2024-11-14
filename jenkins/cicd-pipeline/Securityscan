@@ -40,17 +40,17 @@ stage('SecirityScan') {
          try{
          sh "checkov -d infrastructure-tests -o junitxml --output-file-path scanreport"
          junit skipPublishingChecks: false, testResults: 'scanreport/results_junitxml.xml'
+         sh ''' export TESTMO_TOKEN="testmo_api_eyJpdiI6IjJJbTVBL0lhSnpTN3ozWkpaWG4rdkE9PSIsInZhbHVlIjoiSEN1VGVlc2dsaTVkWlJZd1NrOGhRNkZON2RhMlREZWVyNlQ4WUpBNjRmZz0iLCJtYWMiOiI3ZWU4NDgxOTRhNTEzNGE4MjNjOTRkZTdmNTcyNDIzNmY4MWZjMDQ2NDAxNTM4YjJiYTg0YTdmYTU2YzRlMjNmIiwidGFnIjoiIn0="; testmo automation:run:submit --instance https://harishgautham.testmo.net --project-id 1 --name "Test Report" --source "Compliance Scan" --results **/scanreport/results_junitxml.xml'''
          }
          catch (err) {
            junit skipPublishingChecks: false, testResults: 'scanreport/results_junitxml.xml'
+           sh ''' export TESTMO_TOKEN="testmo_api_eyJpdiI6IjJJbTVBL0lhSnpTN3ozWkpaWG4rdkE9PSIsInZhbHVlIjoiSEN1VGVlc2dsaTVkWlJZd1NrOGhRNkZON2RhMlREZWVyNlQ4WUpBNjRmZz0iLCJtYWMiOiI3ZWU4NDgxOTRhNTEzNGE4MjNjOTRkZTdmNTcyNDIzNmY4MWZjMDQ2NDAxNTM4YjJiYTg0YTdmYTU2YzRlMjNmIiwidGFnIjoiIn0="; testmo automation:run:submit --instance https://harishgautham.testmo.net --project-id 1 --name "Test Report" --source "Compliance Scan" --results **/scanreport/results_junitxml.xml'''
            throw err
          }
-        sh ''' export TESTMO_TOKEN="testmo_api_eyJpdiI6IjJJbTVBL0lhSnpTN3ozWkpaWG4rdkE9PSIsInZhbHVlIjoiSEN1VGVlc2dsaTVkWlJZd1NrOGhRNkZON2RhMlREZWVyNlQ4WUpBNjRmZz0iLCJtYWMiOiI3ZWU4NDgxOTRhNTEzNGE4MjNjOTRkZTdmNTcyNDIzNmY4MWZjMDQ2NDAxNTM4YjJiYTg0YTdmYTU2YzRlMjNmIiwidGFnIjoiIn0="; testmo automation:run:submit --instance https://harishgautham.testmo.net --project-id 1 --name "Test Report" --source "Compliance Scan" --results **/scanreport/results_junitxml.xml'''
     
        }
     }
   }
-
 
 
 
