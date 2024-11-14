@@ -108,6 +108,9 @@ pipeline {
               dir ("Application"){
                 // Run tests (e.g., using Maven)
                 sh './mvnw test'
+                sh 'token1=`cat /var/testmo/testtok`'
+                sh 'export TESTMO_TOKEN=$token1'
+                sh 'testmo automation:run:submit --instance https://harishgautham.testmo.net --project-id 1 --name "Test Execution" --source "IntegrationTest" --results **/target/surefire-reports/TEST-*.xml'
               }
             }
         }
