@@ -1,6 +1,6 @@
 resource "aws_security_group" "instance" {
 
-    name = "terraform-SG"
+    name = "terraform-SGHG"
     ingress  {
         from_port = var.server_port
         to_port = var.server_port
