@@ -160,6 +160,24 @@ In this Automation Framework we integrate Tests in 2 phases and tests can be int
         
       `
    
+## Monitoring Infrastructure Changes for effective Test Suite
+
+Infrastructure Change Detection Tools: 
+Utilize tools like AWS CloudTrail or Azure Monitor to detect changes to infrastructure resources.
+
+Regular Infrastructure Audits: 
+Perform regular audits of the infrastructure to identify any changes the desired state
+
+Test-Driven Infrastructure Development : 
+Adopt approach, where infrastructure changes are driven by automated tests. This ensures that the test suite is always up-to-date with the latest infrastructure changes.
+
+Collaboration and Communication: 
+Collaboration and communication between DevOps teams, QA engineers, and infrastructure engineers to ensure that everyone is aware of changes to the infrastructure and the test suite.
+
+Test Suite Refactoring: 
+Regularly refactor the test suite to ensure it remains relevant and effective in testing the infrastructure. This includes updating test cases to cover new infrastructure components or features.
+
+
 
 ## AI with Test Automation
 
@@ -299,7 +317,7 @@ Cmd 4 > heyIATF
 
 enter the command : Build and Test the infrastructure Code on AWS using 'Red Hat Linux' with AI enabled
 
-Now you can login to http://43.205.229.97:8080/
+Now you can login to [http://43.205.229.97:8080/](http://13.235.33.142:8080/)
 and see a Job has been triggered , refer Jenkins Pipeline section for User / Password. 
 
 Final Result:
@@ -312,7 +330,7 @@ https://harishgautham.testmo.net/automation/runs/1
 ## Jenkins Pipeline 
 
 
-Jenkins URL : http://43.205.229.97:8080/
+Jenkins URL : [http://13.235.33.142:8080/](http://13.235.33.142:8080/)
 
 User : Castor
 Password shared seprately.
