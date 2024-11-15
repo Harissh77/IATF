@@ -41,8 +41,8 @@ sleep 1
 if [[ ${choice} == 1 ]]; then
    echo "phrase build and test actions"
    read -p "IATF> " maincmd
-     if [[ "${maincmd,,}" =~ "red hat" ]] && [[  "${maincmd,,}" =~ "build and test" ]] && [[ "${maincmd,,}" =~ "with ai on" ]] && [[ "${maincmd,,}" =~ "ap-south-1" ]]; then
-          curl -v -X POST http://http://13.235.33.142:8080/job/IATF_Pipeline/build --user Castor:114e9ebf0dfaa8b197b045da220ee7ad86
+     if [[ "${maincmd,,}" =~ "red hat" ]] && [[  "${maincmd,,}" =~ "build and test" ]]  && [[ "${maincmd,,}" =~ "ap-south-1" ]]; then
+          curl -v -X POST http://http://13.235.33.142:8080/job/IATF_Pipeline/build --user Castor:1169b9a04574405541ffdf0316efdbe5a1
      else
           echo "Regrettably, I cannot process this command. something missing! Try rephrasing or check inputs"
      fi
@@ -50,7 +50,7 @@ fi
 
 if [[ ${choice} == 2 ]]; then
     echo "Triggering Security Scan"
-     curl -v -X POST http://13.235.33.142:8080/job/IATF_ComplainceScan/build --user Castor:114e9ebf0dfaa8b197b045da220ee7ad86
+     curl -v -X POST http://13.235.33.142:8080/job/IATF_ComplainceScan/build --user Castor:1169b9a04574405541ffdf0316efdbe5a1
 fi
 
 if [[ ${choice} == 3 ]]; then
