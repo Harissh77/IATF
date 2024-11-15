@@ -119,7 +119,7 @@ pipeline {
             
                script {
                     withAWS(roleAccount:'970547336061', role:'HGRole1', useNode: true) {
-                    sh 'terraform destroy -no-color'
+                    sh 'terraform destroy -auto-approve'
                     }
                }
             }
