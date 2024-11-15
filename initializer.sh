@@ -42,7 +42,7 @@ if [[ ${choice} == 1 ]]; then
    echo "phrase build and test actions"
    read -p "IATF> " maincmd
      if [[ "${maincmd,,}" =~ "red hat" ]] && [[  "${maincmd,,}" =~ "build and test" ]]  && [[ "${maincmd,,}" =~ "ap-south-1" ]]; then
-          curl -v -X POST http://http://13.235.33.142:8080/job/IATF_Pipeline/build --user Castor:1169b9a04574405541ffdf0316efdbe5a1
+          curl -v -X POST http://13.235.33.142:8080/job/IATF_Pipeline/build --user Castor:1169b9a04574405541ffdf0316efdbe5a1
      else
           echo "Regrettably, I cannot process this command. something missing! Try rephrasing or check inputs"
      fi
