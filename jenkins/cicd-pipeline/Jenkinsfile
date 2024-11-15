@@ -112,6 +112,20 @@ pipeline {
               }
             }
         } 
+
+      stage('terraform Destroy') {
+       steps {
+           dir ("infrastructure-tests") {
+            
+               script {
+                    withAWS(roleAccount:'970547336061', role:'HGRole1', useNode: true) {
+                    sh 'terraform destroy -no-color -out=plan.out'
+                    }
+               }
+            }
+        }
+      }
+
       
       stage('Archive Results') {
             steps { 
