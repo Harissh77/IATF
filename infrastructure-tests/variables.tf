@@ -1,11 +1,11 @@
 variable "instance_type" {
   description = "AWS instance type for spinning up a new instance "
   type = string
-  default = "t2.micro"
+  default = "t2.small"
 }
 
 variable "instance_name" {
-  default = "MY-Instance"
+  default = "IATF-Instance"
 }
 
 variable "ami_id" {
